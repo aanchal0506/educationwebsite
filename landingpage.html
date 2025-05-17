@@ -29,7 +29,7 @@
       background: #fffef8;
       border-radius: 16px;
       padding: 40px;
-      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
     }
 
     nav {
@@ -41,19 +41,19 @@
       gap: 20px;
     }
 
-   nav img {
-  height: 100px; /* was 80px */
-  width: auto;
-  object-fit: contain;
-}
+    nav img {
+      height: 100px;
+      width: auto;
+      object-fit: contain;
+    }
 
-.tagline {
-  font-size: 26px; /* was 22px */
-  color: #6b668f;
-  font-weight: 500;
-  flex: 1;
-  text-align: center;
-}
+    .tagline {
+      font-size: 26px;
+      color: #6b668f;
+      font-weight: 500;
+      flex: 1;
+      text-align: center;
+    }
 
     @keyframes fadeSlide {
       0% {
@@ -116,17 +116,19 @@
       font-size: 18px;
       font-weight: 600;
       cursor: pointer;
-      transition: background-color 0.3s ease;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* subtle button shadow */
     }
 
     .get-started-btn:hover {
       background-color: #6A5AE0;
+      transform: scale(1.05);
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- Navbar with logo left and tagline spanning the rest -->
+
     <nav>
       <img src="public/logocropped.png" alt="EduSpark Logo" />
       <div class="tagline">EduSpark - Empowering Learners Everywhere</div>
@@ -137,7 +139,7 @@
       <div class="hero-content">
         <h1 class="hero-title">Ignite Your Learning Journey</h1>
         <p class="hero-subtitle">Explore new skills, deepen your knowledge, and spark your creativity.</p>
-        <button class="get-started-btn" role="button" aria-label="Start Learning with EduSpark">Get Started</button>
+         <a href="option.html" class="get-started-btn" role="button" aria-label="Start Learning with EduSpark">Get Started</a>
       </div>
       <div class="hero-image">
         <img src="/public/cartoon-girl-using-laptop-glowing-light-bulb-idea-above-cartoon-girl-types-laptop-points-to-glowing-light-bulb-375115963.webp" alt="Student learning with laptop" />
