@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EduSpark - Ignite Your Learning Journey</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #f4c3c2, #afa0e8, #b7d8f5);
+      min-height: 100vh;
+      color: #2D2A5D;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .container {
+      max-width: 1200px;
+      width: 100%;
+      background: #fffef8;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 32px;
+      animation: fadeSlide 1.2s ease-in-out forwards;
+      text-align: center;
+    }
+
+    nav img {
+      height: 130px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .tagline {
+      font-size: 20px;
+      color: #6b668f;
+      font-weight: 500;
+      margin-top: 8px;
+    }
+
+    @keyframes fadeSlide {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .hero-image {
+      flex: 1;
+      text-align: center;
+    }
+
+    .hero-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+  .hero-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    text-align: center; 
+}
+
+
+  .hero-title,
+.hero-subtitle {
+  text-align: center;
+}
+    .hero-title {
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 1.2;
+      text-align: center;
+      color: #2D2A5D;
+    }
+
+    .hero-subtitle {
+      font-size: 20px;
+      line-height: 1.6;
+      color: #4a4860;
+      text-align: center;
+    }
+
+    .get-started-btn {
+      background-color: #8B83F7;
+      color: white;
+      border: none;
+      border-radius: 50px;
+      padding: 14px 32px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: fit-content;
+    }
+
+    .get-started-btn:hover {
+      background-color: #6A5AE0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Navbar with centered logo and tagline -->
+    <nav>
+      <img src="public/logocropped.png" alt="EduSpark Logo" />
+      <div class="tagline">EduSpark - Empowering Learners Everywhere</div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Ignite Your Learning Journey</h1>
+        <p class="hero-subtitle">Explore new skills, deepen your knowledge, and spark your creativity.</p>
+        <button class="get-started-btn">Get Started</button>
+      </div>
+      <div class="hero-image">
+        <img src="/public/cartoon-girl-using-laptop-glowing-light-bulb-idea-above-cartoon-girl-types-laptop-points-to-glowing-light-bulb-375115963.webp" alt="Student learning with laptop" />
+      </div>
+    </div>
+  </div>
+</body>
+</html>
