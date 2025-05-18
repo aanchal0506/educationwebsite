@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -24,12 +25,13 @@
     }
 
     .logo-box {
-  position: absolute;  /* change from absolute to fixed */
-  top: 45px;
-  left: 80px;
-  padding: 15px;
-  z-index: 1000;
-}
+      position: absolute;
+      /* change from absolute to fixed */
+      top: 10px;
+      left: 10px;
+      padding: 15px;
+      z-index: 1000;
+    }
 
 
     .logo-box img {
@@ -54,7 +56,7 @@
       max-width: 600px;
       border-radius: 12px;
       border: 1.5px solid #ccc;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     }
 
     .container {
@@ -148,6 +150,7 @@
     }
   </style>
 </head>
+
 <body>
   <!-- Floating Logo Box -->
   <div class="logo-box">
@@ -162,11 +165,14 @@
 
   <!-- Feature Cards -->
   <div class="container" role="list">
-    <div class="card" tabindex="0" role="listitem button" aria-label="Flashcard System">
-      <div class="card-icon" aria-hidden="true">🃏</div>
-      <div class="card-title">Flashcard System</div>
-      <div class="card-desc">Flashcard Viewer with Spaced Repetition Engine for effective learning.</div>
-    </div>
+    <div class="card" tabindex="0" role="listitem button" aria-label="Flashcard System"
+     onclick="location.href='flashcard.html'" 
+     onkeypress="if(event.key==='Enter' || event.key===' ') location.href='flashcard.html'">
+   <div class="card-icon" aria-hidden="true">🃏</div>
+  <div class="card-title">Flashcard System</div>
+  <div class="card-desc">Flashcard Viewer with Spaced Repetition Engine for effective learning.</div>
+</div>
+
     <div class="card" tabindex="0" role="listitem button" aria-label="Quiz System">
       <div class="card-icon" aria-hidden="true">❓</div>
       <div class="card-title">Quiz System</div>
@@ -214,4 +220,5 @@
     });
   </script>
 </body>
+
 </html>
